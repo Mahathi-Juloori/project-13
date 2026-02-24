@@ -1,25 +1,23 @@
 @import "tailwindcss";
 
-/* Modern Premium Theme Configuration */
 @theme {
   --font-sans:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* Premium color palette */
   --color-primary: #1f2937;
   --color-accent: #0ea5e9;
   --color-success: #10b981;
   --color-light-bg: #f8fafc;
   --color-white: #ffffff;
 
-  /* Shadows for depth and elevation */
+  --color-uber-green: #06C167;
+
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-card-hover: 0 12px 24px rgba(0, 0, 0, 0.12);
   --shadow-bottom-sheet: 0 -4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Base Styles - Modern premium theme */
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +56,6 @@ body {
   pointer-events: none;
 }
 
-/* Bottom Sheet Card */
 .bottom-sheet {
   background: white;
   border-radius: 28px;
@@ -88,7 +85,6 @@ body {
   border-radius: 3px;
 }
 
-/* Clean White Card */
 .clean-card {
   background: white;
   border-radius: 16px;
@@ -103,7 +99,6 @@ body {
   border-color: #d1d5db;
 }
 
-/* Modern Primary Button */
 .btn-uber {
   width: 100%;
   padding: 16px 24px;
@@ -136,7 +131,6 @@ body {
   box-shadow: none;
 }
 
-/* Input Field - Modern Style */
 .input-uber {
   width: 100%;
   padding: 14px 16px;
@@ -159,7 +153,6 @@ body {
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* Vehicle Card - Modern Style */
 .vehicle-card-uber {
   background: white;
   border: 2px solid #e5e7eb;
@@ -200,7 +193,6 @@ body {
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
 }
 
-/* Location Dot Indicator */
 .location-dot {
   width: 14px;
   height: 14px;
@@ -229,7 +221,6 @@ body {
   box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
 }
 
-/* Route Line */
 .route-line {
   width: 3px;
   background: linear-gradient(to bottom, #667eea 0%, #10b981 100%);
@@ -239,7 +230,6 @@ body {
   border-radius: 2px;
 }
 
-/* Badge Styles */
 .feature-badge {
   display: inline-block;
   padding: 6px 14px;
@@ -264,7 +254,6 @@ body {
   color: #9ca3af;
 }
 
-/* Success Green */
 .text-success {
   color: #10b981;
 }
@@ -273,7 +262,6 @@ body {
   background-color: #10b981;
 }
 
-/* Header Bar */
 .header-bar {
   background: white;
   padding: 16px 20px;
@@ -284,7 +272,6 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* Back Button */
 .back-button {
   width: 44px;
   height: 44px;
@@ -304,7 +291,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Suggestion Dropdown */
 .suggestions-dropdown {
   background: white;
   border-radius: 12px;
@@ -334,7 +320,6 @@ body {
   padding-left: 20px;
 }
 
-/* Divider */
 .divider {
   height: 1px;
   background: linear-gradient(to right, transparent, #e5e7eb, transparent);
@@ -388,4 +373,12 @@ body {
 
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out;
+}
+
+.bg-uber-green {
+  background-color: #06C167;
+}
+
+.text-uber-green {
+  color: #06C167;
 }
